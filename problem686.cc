@@ -48,10 +48,28 @@ public:
         return 0;
     }
 };
+//use bisection of list, but with doubling the range instead of cutting it down from the top
+int findIndexOfNextHighestPair( vector<vector<int>> pairs,int startIndex , int value_to_search, int index_in_pair_to_search){
+    if (pairs[startIndex][index_in_pair_to_search] > value_to_search){ return startIndex; }
+    bool indexNotFound = true;
+    int endIndex = startIndex + 1;
+    int halfway_point
+    int difference
+    while (indexNotFound){
+        if (pairs[index_in_pair_to_search][endIndex] > value_to_search){
+            
+            if (startIndex+1 == endIndex){
+                return endIndex
+            }
+  
+        } else { //double the range 
+            endIndex = (endIndex-startIndex)*2 + endIndex
+            
 
-int findIndexOfNextHighestPair( vector<vector<int>> pairs){
+        }
 
-    return 0;
+    }
+    return index;
 }
 
 int main() {
